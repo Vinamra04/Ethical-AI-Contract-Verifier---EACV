@@ -11,3 +11,5 @@ build/
 android/
 ios/
 .worktrees/
+docs/
+.gitignore
