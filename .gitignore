@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.pkl
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.expo/
+android/
+ios/
+.worktrees/

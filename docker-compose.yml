@@ -1,0 +1,14 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./Colab/ethical_risk_bundle.pkl:/app/model/ethical_risk_bundle.pkl:ro
+    env_file:
+      - backend/.env
+    environment:
+      MODEL_PATH: /app/model/ethical_risk_bundle.pkl

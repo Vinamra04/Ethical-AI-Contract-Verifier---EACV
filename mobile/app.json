@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "EACV",
+    "slug": "eacv",
+    "version": "1.0.0",
+    "scheme": "eacv",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080C14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eacv.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080C14"
+      },
+      "package": "com.eacv.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "EACV needs photo access to analyze document images."
+        }
+      ],
+      "expo-web-browser"
+    ]
+  }
+}
